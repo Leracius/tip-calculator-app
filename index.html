@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- --------------------By Axel Quintana------------------------------- -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP CALCULATOR </title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+<body>
+    <img src="./images/logo.svg" alt="">
+    <section>
+        <div class="card">
+            <div class="sides">
+                <h2 class="grey-h2">Bill</h2>
+                <div class="input-containers">
+                    <input class="input-valid" type="number" name="numer" id="input-cash" class="input-number" value="0" >
+                </div>
+                <h2 class="grey-h2">Select tip %</h2>
+                <div class="container-btn">
+                    <button class="butons" id="button-5">5%</button>
+                    <button class="butons" id="button-10">10%</button>
+                    <button class="butons-v" id="button-15">15%</button>
+                    <button class="butons" id="button-25">25%</button>
+                    <button class="butons" id="button-50">50%</button>
+                    <input type="number" name="random" id="input-random" placeholder="Custom">
+                </div>
+                <div class="people-error-cont"><h2 class="grey-h2">Number of people</h2><p id="p-error"></p></div>
+                <div class="input-containers">
+                    <input class="input-valid" type="number" name="peoples" id="input-people" value="0">
+                </div>
+            </div>
+            <div class="sides-2">
+                <div class="total-container">
+                    <h3 id="h3-amount">$0.00</h3>
+                    <div><h4>Tip Amount</h4><h5>/ person</h5></div>
+                </div>
+                <div class="total-container" id="container-total">
+                    <h3 id="h3-total">$0.00</h3>
+                    <div><h4>Total</h4><h5>/ person</h5></div>
+                </div>
+                <button class="check" type="submit" id="button-check">RESET</button>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>

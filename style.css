@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   margin: 0;
+   background-color:hsl(185, 41%, 84%);
+}
+img{
+    margin-top: 40px;
+    width: 100px;
+    height: 60px;
+}
+section{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 60px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.card{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .sides{
+    border: 1px solid red;
+} */
+
+h2{
+    /* border: 1px solid blue; */
+    padding: 0;
+}
+.input-containers{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.container-btn {
+    margin: 0 0 20px 0;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 15px 15px; 
+    grid-template-areas: 
+      ". ."
+      ". ."
+      ". ."; 
+  }
+
+.butons, #input-random, .butons-v{
+    border: none;
+    padding: 0px;
+    height: 45px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.butons{
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    cursor: pointer;
+}
+.butons:hover{
+    background-color:hsl(183, 100%, 28%) ;
+}
+.butons-v{
+    width: 100%;
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+.butons-v:hover{
+    background-color:hsl(172, 78%, 66%);
+}
+
+#input-random{
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    padding: 0;
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(189, 41%, 97%);
+    cursor: pointer;
+}
+#input-random:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+h2{
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+    color: hsl(186, 14%, 43%);
+}
+
+.input-valid{
+    color:  hsl(183, 100%, 15%);
+    font-size: 24px;
+    padding: 8px 15px 8px 15px;
+    text-align: end;
+    justify-self: center;
+    border: none;
+    width: 100%;
+    background-color:hsl(189, 41%, 97%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+#input-cash{
+    margin-bottom: 20px;
+   }
+
+input:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+input:focus, textarea:focus{
+    outline: none; 
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.people-error-cont{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    font-size: 14px;
+    margin: 12px 5px 0 0;
+    color: red;
+    text-align: end;
+}
+
+.sides-2{
+    background-color:  hsl(183, 100%, 15%) ;
+    margin: 26px 0px 0px 0px;
+    padding-top: 18px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.total-container{
+    width: 93%;
+    margin: 12px;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
+}
+h3{
+    grid-area: 1/2/3/3;
+    font-size: 30px;
+    color:hsl(172, 67%, 45%);
+    text-align: end;
+    margin: 0;
+}
+h4{
+    grid-area: 1/1/2/2;
+    margin: 0;
+    color: white;
+}
+h5{
+    grid-area: 2/1/3/2;
+    margin: 0;
+    color: hsl(186, 14%, 43%);
+}
+.check{
+    border: none;
+    border-radius: 6px;
+    background-color: hsl(172, 67%, 45%);
+    padding: 10px;
+    margin: 12px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color:  hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+.check:hover{
+    color:  white;
+}
+
+@media only screen and (min-width: 620px){
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    section{
+        width: 850px;
+        height: 450px;
+        margin-top: 20px;
+    }
+    .card{
+        width: 94%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
+    }
+    .container-btn {
+        margin: 0;
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+   .input-valid{
+    padding: 5px 15px 5px 15px;
+    width: 100%;
+    height: 95%;
+    border-radius: 5px;
+   }
+   #input-cash{
+    margin-bottom: 30px;
+   }
+   .sides-2{
+    padding: 20px;
+    margin: 0;
+    justify-content: flex-start;
+    }
+    .check{
+        margin-top: 0px;
+        justify-self: flex-end;
+    }
+    h2{
+        margin: 10px 10px 10px 0;
+    }
+    h3{
+        grid-area: 1/2/3/3;
+        font-size: 40px;
+        color:hsl(172, 67%, 45%);
+        text-align: end;
+        margin: 0;
+    }
+    h4{
+        margin-top: 10px;
+    }
+    #container-total{
+        height: 180px;
+    }
+}
