@@ -36,7 +36,7 @@ const renderResult =()=>{
 }
 
 const showError = ()=>{
-    pError.innerHTML=`Can't be zero`
+    pError.innerHTML=`Ingrese un numero`
     inputPeople.style.border='2px solid red'
     setTimeout(()=>{
         pError.innerHTML='',

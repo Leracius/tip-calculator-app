@@ -76,16 +76,8 @@ h2{
     cursor: pointer;
 }
 .butons:hover{
-    background-color:hsl(183, 100%, 28%) ;
-}
-.butons-v{
-    width: 100%;
-    background-color:hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-    cursor: pointer;
-}
-.butons-v:hover{
-    background-color:hsl(172, 78%, 66%);
+    background-color:hsl(172, 67%, 45%) ;
+    color:  hsl(183, 100%, 15%);
 }
 
 #input-random{
@@ -176,11 +168,14 @@ h3{
     margin: 0;
 }
 h4{
+    font-size: 14px;
     grid-area: 1/1/2/2;
     margin: 0;
     color: white;
+    padding: 0;
 }
 h5{
+    padding: 0;
     grid-area: 2/1/3/2;
     margin: 0;
     color: hsl(186, 14%, 43%);
